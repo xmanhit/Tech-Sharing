@@ -1,0 +1,64 @@
+{
+  "name": "MeS",
+  "version": "1.0.0",
+  "description": "Me share",
+  "author": "XManhIT <nxmanh102@gmail.com>",
+  "main": "app.js",
+  "engines": {
+    "node": ">=8.10.0",
+    "npm": ">=5.6.0",
+    "yarn": ">=1.5.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "start:debug": "cross-env DEBUG=express-mongoose-es6-rest-api:* yarn start",
+    "dev": "nodemon --inspect app.js",
+    "lint": "esw *.js server config --color",
+    "lint:watch": "yarn lint -- --watch",
+    "precommit": "yarn lint && yarn test",
+    "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors server --recursive",
+    "test:watch": "yarn test -- --watch",
+    "test:coverage": "cross-env NODE_ENV=test ./node_modules/.bin/istanbul cover _mocha -- --ui bdd --reporter spec --colors server --recursive",
+    "test:check-coverage": "yarn test:coverage && istanbul check-coverage",
+    "report-coverage": "coveralls < ./coverage/lcov.info"
+  },
+  "repository": "https://github.com/xmanhit/MeS.git",
+  "keywords": [
+    "express",
+    "node",
+    "node.js",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "REST",
+    "API",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^6.12.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "env-schema": "^1.1.0",
+    "express": "^4.17.1",
+    "express-ajsv-middleware": "^1.0.0",
+    "express-jwt": "^5.3.3",
+    "express-winston": "^4.0.3",
+    "helmet": "^3.22.0",
+    "http-status": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.9",
+    "morgan": "^1.10.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.3"
+  }
+}
