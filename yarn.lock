@@ -635,10 +635,10 @@ express-ajsv-middleware@^1.0.0:
   resolved "https://registry.yarnpkg.com/express-ajsv-middleware/-/express-ajsv-middleware-1.0.0.tgz#1ed31b2fe8f847a518d50903de55ddebb36ccc89"
   integrity sha512-aJxr31fE5noO+FdITfuDlywvBxyNyqk/OLHKZvbuc/tEBXURILPrPzTlCzyi/WGRBxO2gB/GpqZXHaEzaPfKXQ==
 
-express-jwt@^5.3.3:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/express-jwt/-/express-jwt-5.3.3.tgz#e557b4a63dd34c5ddd6ad81452738386314cc243"
-  integrity sha512-UdB8p5O8vGYTKm3SfREnLgVGIGEHcL3lrVyi3ebEX2qhMuagN623ju7ywWis+qYL+CXE7G1qPc2bCPBAg2MxZQ==
+express-jwt@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/express-jwt/-/express-jwt-6.0.0.tgz#20886c730983ffb1c706a4383235df86eff349b8"
+  integrity sha512-C26y9myRjx7CyhZ+BAT3p+gQyRCoDZ7qo8plCvLDaRT6je6ALIAQknT6XLVQGFKwIy/Ux7lvM2MNap5dt0T7gA==
   dependencies:
     async "^1.5.0"
     express-unless "^0.3.0"
